@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Courier Status</h2>
+    {% if data %}
+        <p>Tracking ID: {{data[1]}}</p>
+        <p>Sender: {{data[2]}}</p>
+        <p>Receiver: {{data[3]}}</p>
+        <p>Status: {{data[4]}}</p>
+    {% else %}
+        <p>Invalid Tracking ID</p>
+    {% endif %}
+</body>
+</html>
